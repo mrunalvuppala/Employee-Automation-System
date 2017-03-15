@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript">
+function f1()
+{
+
+
+	var x2=document.forms["form1"]["fname"].value;
+	var x3=document.forms["form1"]["lname"].value;
+	var x4=document.forms["form1"]["frname"].value;
+	var x5=document.forms["form1"]["gender"].value;
+	var x6=document.forms["form1"]["dob"].value;
+	var x7=document.forms["form1"]["eduq"].value;
+	var x8=document.forms["form1"]["addr"].value;
+	var x9=document.forms["form1"]["email"].value;
+	var atpos=x9.indexOf("@");
+	var dotpos=x9.lastIndexOf(".");
+	var x10=document.forms["form1"]["phno"].value;
+	var x11=document.forms["form1"]["empdept"].value;
+	var x12=document.forms["form1"]["uname"].value;
+	var x13=document.forms["form1"]["pwd"].value;
+	
+	if(x2==null || x2=="")
+	{
+		alert("enter first name");
+		return false;
+	}
+	else if(x3==null || x3=="")
+	{
+		alert("enter last name");
+		return false;
+	}
+	else if(x4==null || x3=="")
+	{
+		alert("enter father's name");
+		return false;
+	}
+	else if(x6==null || x6=="")
+	{
+		alert("enter date of birth");
+		return false;
+	}
+	else if(x8==null || x8=="")
+	{
+		alert("enter address");
+		return false;
+	}
+	else if(x9==null || x9=="")
+	{
+		alert("enter email id");
+		return false;
+	}
+	else if(x10==null || x10=="")
+	{
+		alert("enter phone number");
+		return false;
+	}
+	else if(x11==null || x11=="")
+	{
+		alert("enter department name");
+		return false;
+	}
+	else if(x12==null || x12=="")
+	{
+		alert("enter user name");
+		return false;
+	}
+	else if(x13==null || x13=="")
+	{
+		alert("enter password");
+		return false;
+	}
+	else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x9.length)
+	  {
+		  alert("Not a valid e-mail address");
+		  return false;
+		  }
+	else
+		{
+		return true;
+		}
+	
+	}
+</script>
+<title>Onti | Support</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/coin-slider.css" />
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/droid_sans_400-droid_sans_700.font.js"></script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/coin-slider.min.js"></script>
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	width:323px;
+	height:566px;
+	z-index:1;
+	left: 233px;
+	top: 237px;
+}
+#Layer2 {
+	position:absolute;
+	width:200px;
+	height:54px;
+	z-index:2;
+	left: 298px;
+	top: 241px;
+}
+-->
+</style>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="index.html"><span>Employee Pre-Exit System</span></a></h1>
+      </div>
+      <div class="searchform"></div>
+      <div class="clr"></div>
+      <div class="menu_nav">
+        <ul>
+          <li><a href="emp.html"><span>Home </span></a></li>
+          <li class="active"><a href="loginhome.html">logout</a></li>
+         </ul>
+      </div>
+      <div class="clr"></div>
+      <div class="slider">
+        <div class="clr"></div>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content_resize">
+      <div class="sidebar">
+        <div class="gadget">
+          <h2 class="star">Admin Menu</h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+          	<li><a href="empreg.html">Employee Registration </a></li>
+            <li><a href="empdetails1.jsp">View Employee Details </a></li>
+            <li><a href="empdelete.html">Delete Employee Details </a></li>
+ 			<li><a href="notification.jsp">Submit Notification Details </a></li>     
+          </ul>
+        </div>
+      </div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div id="Layer1">
+	<h2>&nbsp;&nbsp;&nbsp;&nbsp;Employee Registration</h2>
+      <form id="form1" name="form1" method="post" action="empinsert.jsp" onsubmit="return f1()">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <table width="318" height="442" border="0">
+         
+            <td>First Name </td>
+            <td><input type="text" name="fname" /></td>
+          </tr>
+          <tr>
+            <td>Last Name </td>
+            <td><input type="text" name="lname" /></td>
+          </tr>
+          <tr>
+            <td>Father Name </td>
+            <td><input type="text" name="frname" /></td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td><input name="gender" type="radio" value="Male" />
+            Male 
+              <input name="gender" type="radio" value="Female" />
+            Female</td>
+          </tr>
+          <tr>
+            <td>Date Of Birth </td>
+            <td><input type="text" name="dob" /></td>
+          </tr>
+          <tr>
+            <td>Education Qualification </td>
+            <td><input type="checkbox" name="eduq" value="B.Tech." />
+            B.Tech. 
+              <input type="checkbox" name="eduq" value="M.Tech." />
+              M.Tech.</td>
+          </tr>
+          <tr>
+            <td>Address</td>
+            <td><input type="text" name="addr" /></td>
+          </tr>
+          <tr>
+            <td>Email Id </td>
+            <td><input type="text" name="email" /></td>
+          </tr>
+          <tr>
+            <td>Phone No </td>
+            <td><input type="text" name="phno" /></td>
+          </tr>
+          <tr>
+            <td>Employee Dept. </td>
+            <td><label>
+              <input type="text" name="empdept" />
+            </label></td>
+          </tr>
+          <tr>
+            <td>Employee Salary</td>
+            <td><label>
+              <input type="text" name="salary" />
+            </label>per month</td>
+          </tr>
+          
+          <tr>
+            <td>Password</td>
+            <td><input type="password" name="pwd" /></td>
+          </tr>
+        </table>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="submit" name="Submit1" value="Submit" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="submit" name="Submit2" value="Cancel" />
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+</html>
